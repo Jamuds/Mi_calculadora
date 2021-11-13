@@ -8,9 +8,15 @@ function calculo(){
         alert("Revise que todos los campos estén llenos")
     } else{ 
         var max=mayor(numero1, numero2, numero3)
-        var fact=factorial(max)
+        if(max>0){
+            var fact=factorial(max)
 
-        alert('El factorial de '+ max+ ' es: '+fact)
+            alert('El factorial de '+ max+ ' es: '+fact)
+        }
+        else {
+            alert("Por definición el factorial es únicamente para números positivos")
+        }
+        
     } 
 
 }
