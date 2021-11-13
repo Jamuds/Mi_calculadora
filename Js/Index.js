@@ -4,11 +4,15 @@ function calculo(){
     var numero2= document.getElementById ("numero2").value;
     var numero3= document.getElementById ("numero3").value;
         
-    var max=mayor(numero1, numero2, numero3)
-    var fact=factorial(max)
+    if(numero1=="" || numero2=="" || numero3==""){
+        alert("Revise que todos los campos estén llenos")
+    } else{ 
+        var max=mayor(numero1, numero2, numero3)
+        var fact=factorial(max)
 
-    alert('El factorial de '+ max+ ' es: '+fact)
-    
+        alert('El factorial de '+ max+ ' es: '+fact)
+    } 
+
 }
 
 function mayor(numero1, numero2, numero3){
