@@ -4,6 +4,7 @@
 <head charset="utf-8">
     <title>Mi calculator</title>
     <link rel="stylesheet" href="css/Index.css" />
+    <script src="Js/Index.js"></script>
 </head>
 
 <body>
@@ -14,24 +15,25 @@
 
         <div class="casilla1">
             <span>
-                <input id="numero 1" type="text" placeholder="Número 1" name=""/>
+                <input id="numero1" type="text" placeholder="Número 1" name=""/>
             </span> 
         </div>
 
         <div class="casilla2">
             <span>
-                <input id="numero 2" type="text" placeholder="Número 2" name=""/>
+                <input id="numero2" type="text" placeholder="Número 2" name=""/>
             </span>   
         </div>
         
         <div class="casilla3">
             <span>
-                <input id="numero 3" type="text" placeholder="Número 3" name=""/>
+                <input id="numero3" type="text" placeholder="Número 3" name=""/>
             </span>        
         </div>
         
         <div class="calculo">
-            <button>Calcular</button>
+            <button onclick="calculo()">Calcular</button>
+
         </div>
     </div>
 
